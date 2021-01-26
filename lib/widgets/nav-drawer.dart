@@ -25,7 +25,7 @@ class NavDrawer extends StatelessWidget {
               ListTile(
                 title: Text('Cerrar Sesión'),
                 onTap: () {
-                  //
+                  Provider.of<Auth>(context, listen: false).logout();
                 },
               ),
             ],
